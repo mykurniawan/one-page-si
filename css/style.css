@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .hero-section {
   background: linear-gradient(rgba(0, 0, 64, 0.8), rgba(0, 0, 128, 0.9)),
     url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1")
@@ -217,7 +220,7 @@
 
 .step-card {
   background: #fff;
-  boder-radius: 15px;
+  border-radius: 15px;
   transition: transform 0.3s ease;
 }
 
@@ -238,12 +241,15 @@
     padding: 30px 0 20px 0;
     background-position: center;
     border-radius: 0 0 1rem 1rem;
+    box-shadow: none;
   }
   .hero-text h1 {
     font-size: 1.2rem;
+    margin-bottom: 0.3rem;
   }
   .hero-text h2 {
     font-size: 1rem;
+    margin-bottom: 0.3rem;
   }
   .student-img {
     width: 100%;
@@ -252,6 +258,7 @@
     display: block;
     margin: 0 auto;
     border-radius: 0.5rem;
+    box-shadow: none;
   }
   .hero-logo {
     max-width: 50px;
@@ -260,5 +267,84 @@
     padding: 1rem;
     font-size: 1rem;
     border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .about-section .about-title {
+    min-height: 120px;
+    padding: 1rem 0;
+  }
+  .about-section .about-title h2 {
+    font-size: 1.1rem;
+  }
+  .alumni-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+  }
+  .alumni-card {
+    padding: 1rem;
+  }
+  .career-card {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .steps-section .step-card {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .step-card img {
+    height: 120px;
+    border-radius: 6px;
+  }
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .footer .row > div {
+    margin-bottom: 1rem;
+  }
+  .footer h5 {
+    font-size: 1rem;
+  }
+  .footer-link {
+    font-size: 0.95rem;
+  }
+  .register-section .col-md-6 {
+    padding: 1rem !important;
+  }
+  .custom-btn {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .faq-title {
+    font-size: 1.1rem;
+  }
+  .faq-item {
+    padding: 0.5rem;
+  }
+  .container, .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+  .mb-4 {
+    margin-bottom: 1.2rem !important;
+  }
+  .p-5 {
+    padding: 1.2rem !important;
+  }
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
   }
 }
