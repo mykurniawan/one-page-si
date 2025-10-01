@@ -3,7 +3,7 @@ html {
 }
 .hero-section {
   background: linear-gradient(rgba(0, 0, 64, 0.8), rgba(0, 0, 128, 0.9)),
-    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1")
+    url("../assets/hero-img.jpg")
       center/cover no-repeat;
   color: white;
   padding: 60px 0 40px 0;
@@ -124,7 +124,7 @@ html {
 /* nyata ?  */
 /* Alumni Section */
 .alumni-section {
-  background-color: grey; /*soon-biru terang */
+  background-color: #1e40ff; 
 }
 
 .alumni-card {
@@ -153,7 +153,7 @@ html {
 /* Career Section */
 .career-section {
   position: relative;
-  background: url("assets/campus-bg.jpg") no-repeat center center/cover;
+  background: url("../assets/prospek-background.jpg") no-repeat center center/cover;
 }
 
 .career-section::before {
@@ -202,7 +202,7 @@ html {
 
 /* 3step  */
 .steps-section {
-  background: url("assets/") no-repeat center center/cover;
+  background: url("../assets/") no-repeat center center/cover;
   position: relative;
 }
 
@@ -238,6 +238,104 @@ html {
   border-radius: 10px;
 }
 
+
+/* FAQ Section */
+.faq-section {
+  background: #fff;
+}
+
+.faq-title {
+  font-size: 2.2rem;
+  color: #0d1ab5; /* biru tua seperti di gambar */
+  line-height: 1.3;
+}
+
+.faq-item h6 {
+  color: #0d1ab5;
+}
+
+.faq-item p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+
+/* register */
+/* Background dengan overlay biru */
+.register-section {
+  /* background: url('bg-graduation.jpg') no-repeat center center/cover; */
+  background: BLUE;
+  position: relative;
+}
+
+.register-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(15, 40, 200, 0.85); /* overlay biru */
+  z-index: 1;
+}
+
+.register-section .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+/* Input garis bawah */
+.custom-input {
+  border: none;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 0;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Tombol */
+.custom-btn {
+  background: #ffeb00; /* kuning */
+  color: #001489;      /* biru tua */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 0;
+  border: none;
+}
+
+.custom-btn:hover {
+  background: #ffd900;
+}
+
+footer
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-social {
+  font-size: 1.4rem;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-social:hover {
+  color: #fff;
+}
+
+
 /* rssponsve  */
 @media (max-width: 768px) {
   .hero-section {
@@ -245,14 +343,17 @@ html {
     background-position: center;
     border-radius: 0 0 1rem 1rem;
     box-shadow: none;
+    min-height: unset;
   }
   .hero-text h1 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
+    line-height: 1.2;
   }
   .hero-text h2 {
     font-size: 1rem;
     margin-bottom: 0.3rem;
+    line-height: 1.2;
   }
   .student-img {
     width: 100%;
@@ -262,6 +363,7 @@ html {
     margin: 0 auto;
     border-radius: 0.5rem;
     box-shadow: none;
+    min-width: 0;
   }
   .hero-logo {
     max-width: 50px;
@@ -271,10 +373,12 @@ html {
     font-size: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
+    min-width: 0;
   }
   .about-section .about-title {
     min-height: 120px;
     padding: 1rem 0;
+    text-align: center;
   }
   .about-section .about-title h2 {
     font-size: 1.1rem;
@@ -286,22 +390,27 @@ html {
   }
   .alumni-card {
     padding: 1rem;
+    min-width: 0;
   }
   .career-card {
     padding: 1rem;
     border-radius: 8px;
+    min-width: 0;
   }
   .steps-section .step-card {
     padding: 1rem;
     border-radius: 8px;
+    min-width: 0;
   }
   .step-card img {
     height: 120px;
     border-radius: 6px;
+    min-width: 0;
   }
   .section-title {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
   }
   .footer {
     padding-top: 2rem;
@@ -309,6 +418,7 @@ html {
   }
   .footer .row > div {
     margin-bottom: 1rem;
+    min-width: 0;
   }
   .footer h5 {
     font-size: 1rem;
@@ -318,6 +428,7 @@ html {
   }
   .register-section .col-md-6 {
     padding: 1rem !important;
+    min-width: 0;
   }
   .custom-btn {
     font-size: 1rem;
@@ -325,6 +436,7 @@ html {
   }
   .faq-title {
     font-size: 1.1rem;
+    line-height: 1.2;
   }
   .faq-item {
     padding: 0.5rem;
@@ -332,10 +444,13 @@ html {
   .container, .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
+    min-width: 0;
   }
   .row {
     margin-left: 0;
     margin-right: 0;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .mb-5 {
     margin-bottom: 2rem !important;
@@ -349,5 +464,52 @@ html {
   .py-5 {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
+  }
+
+  /* Kolom grid menjadi satu kolom di mobile */
+  .row > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Button konsultasi dan warning full width di mobile */
+  .btn-konsultasi, .btn-warning, .custom-btn {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  /* Info section flex ke block */
+  .info-section {
+    display: block;
+    padding: 1.2rem 0;
+  }
+
+  /* About grid gambar stack */
+  .about-section .row.g-0 {
+    flex-direction: column;
+  }
+
+  /* Alumni section padding kecil */
+  .alumni-section {
+    padding: 1.2rem 0 !important;
+  }
+
+  /* Steps section padding kecil */
+  .steps-section {
+    padding: 1.2rem 0 !important;
+  }
+
+  /* Register section padding kecil */
+  .register-section {
+    padding: 1.2rem 0 !important;
+  }
+
+  /* FAQ section padding kecil */
+  .faq-section {
+    padding: 1.2rem 0 !important;
   }
 }
